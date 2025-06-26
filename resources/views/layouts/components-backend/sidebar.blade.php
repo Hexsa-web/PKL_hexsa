@@ -25,7 +25,7 @@
             <!-- Dashboard -->
             <!-- ---------------------------------- -->
             <li class="sidebar-item">
-              <a class="sidebar-link" href="{{route ('category.index') }}" id="get-url" aria-expanded="false">
+              <a class="sidebar-link" href="{{route ('backend.category.index') }}" id="get-url" aria-expanded="false">
                 <span>
                   <i class="ti ti-aperture"></i>
                 </span>

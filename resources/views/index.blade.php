@@ -2021,7 +2021,7 @@
                                 <div class="grid__quick__content">
                                     <h3>{{$data->name}}</h3>
                                     <div class="quick__price">
-                                     {{$data->price}}
+                                    Rp {{ number_format($data->price, 0, ',', '.') }}
                                     </div>
                                     <p>we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensuel...</p>
 

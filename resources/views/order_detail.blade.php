@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xl-12">
-                <div class="Order_Detail_title">
+                <div class="Order__Detail__title">
                     <h1>Detail</h1>
                     <ul class="d-flex">
                         <li><a href="{{ url('/') }}">Home</a></li>

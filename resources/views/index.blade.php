@@ -23,7 +23,7 @@
                              </div>
                              <div class="col-xl-6 col-lg-6 col-md-6 col-12 herobanner__img__side">
                                  <div class="herobanner__img">
-                                     <img src="{{asset('assets/frontend/img/herobanner/main_herobanner__2.png')}}" alt="">
+                                     <img src="{{asset('assets/frontend/img/herobanner/main__herobanner__2.png')}}" alt="">
                                  </div>
                              </div>
                          </div>
@@ -44,7 +44,7 @@
                              </div>
                              <div class="col-xl-6 col-lg-6 col-md-6 col-12 herobanner__img__side">
                                  <div class="herobanner__img">
-                                     <img src="{{asset('assets/frontend/img/herobanner/main_herobanner__1.png')}}" alt="">
+                                     <img src="{{asset('assets/frontend/img/herobanner/main__herobanner__1.png')}}" alt="">
                                  </div>
                              </div>
                          </div>
@@ -65,7 +65,7 @@
                              </div>
                              <div class="col-xl-6 col-lg-6 col-md-6 col-12 herobanner__img__side">
                                  <div class="herobanner__img">
-                                     <img src="{{asset('assets/frontend/img/herobanner/main_herobanner__3.png')}}" alt="">
+                                     <img src="{{asset('assets/frontend/img/herobanner/main__herobanner__3.png')}}" alt="">
                                  </div>
                              </div>
                          </div>
@@ -79,7 +79,7 @@
      <!-- herobanner__end -->
 
      <!-- banner__section__start -->
-     <div class="banner sp_top_80 sp_bottom_80">
+     <div class="banner sp__top__80 sp__bottom_80">
          <div class="container">
              <div class="row">
                  <div class="col-xl-6 col-lg-6 col-md-6 col-12">
@@ -2026,7 +2026,7 @@
                                     <p>we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensuel...</p>
 
 
-                                    <div class="selector__wrapper">
+                                    <div class="selector__wraper">
                                         <select class="single-option-selector select--wd" data-option="option1" id="product-select-qv-option-0">
                                             <option value="White">White</option>
                                             <option value="Gold">Gold</option>

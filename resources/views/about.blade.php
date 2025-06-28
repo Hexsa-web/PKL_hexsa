@@ -14,7 +14,7 @@
         
                     <div class="mobile__logo">
                         <a href="index.html">
-                            <img src="{{asset('assets/frontend/img/logo/logo__1.png')}}" alt="Logo">
+                            <img src="{{asset('assets/frontend/img/logo/logo_1.png')}}" alt="Logo">
                         </a>
                     </div>
         
@@ -336,7 +336,7 @@
             <!-- minicart__section__start -->
             <section class="minicart">
                 <div class="minicart__inner">
-                    <div class="minicart__wrapper">
+                    <div class="minicart__wraper">
                         <div class="minicart__close__icon">
                             <div class="minicart__cart__text ">
                                 <strong>Cart</strong>
@@ -352,7 +352,7 @@
         
                                 <div class="minicart__single__img">
                                     <a href="single-product.html">
-                                        <img src="{{asset('assets/frontend/img/grid/grid__1.png')}}" alt="product">
+                                        <img src="{{asset('assets/frontend/img/grid/grid_1.png')}}" alt="product">
                                     </a>
                                     <div class="minicart__single__close">
                                         <button title="Remove"><i class="fa fa-close"></i></button>
@@ -370,7 +370,7 @@
         
                                 <div class="minicart__single__img">
                                     <a href="single-product.html">
-                                        <img src="{{asset('assets/frontend/img/grid/grid__2.png')}}" alt="product">
+                                        <img src="{{asset('assets/frontend/img/grid/grid_2.png')}}" alt="product">
                                     </a>
                                     <div class="minicart__single__close">
                                         <button title="Remove"><i class="fa fa-close"></i></button>
@@ -436,7 +436,7 @@
          <!-- breadcrumb__end -->
 
         <!-- about__section__start -->
-            <div class="about sp_top_80 sp_bottom_80">
+            <div class="about sp__top__80 sp__bottom__80">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-6 col-lg-6 col-md-12 col-12">
@@ -448,7 +448,7 @@
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-12 col-12">
                             <div class="about__img">
-                                <img src="{{asset('assets/frontend/img/about/about__1.jpg" alt="">
+                                <img src="{{asset('assets/frontend/img/about/about__1.jpg')}}" alt="">
                             </div>
                         </div>
                     </div>
@@ -457,12 +457,12 @@
         <!-- about__section__end -->
 
         <!-- video__banner__section -->
-            <div class="video sp_bottom_80">
+            <div class="video sp__bottom__80">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="video__img">
-                                <img src="{{asset('assets/frontend/img/about/video-banner__1.jpg" alt="">
+                                <img src="{{asset('assets/frontend/img/about/video-banner__1.jpg')}}" alt="">
                                 <div class="video__icon">
                                     <a class="video-btn" href="https://www.youtube.com/watch?v=JQpk-DoMn3I"> <i class="fa fa-play"></i></a>
                                 </div>
@@ -474,7 +474,7 @@
         <!-- video__banner__section -->
 
        <!-- testimonial__section__start -->
-       <div class="testimonial sp_bottom_80">
+       <div class="testimonial sp__bottom__80">
         <div class="container testimonial__color testimonial__color__5">
             <div class="row testimonial__slider__active slider__default__arrow slider__default__dot slider__default__dot--2">
                 <div class="col-xl-12">
@@ -521,7 +521,7 @@
     <!-- testimonial__section__start -->
 
         <!-- brant__section__start -->
-            <div class="brand sp_bottom_80">
+            <div class="brand sp__bottom__80">
                 <div class="container">
                     <div class="brand__wraper brand__slider__active">
                         <div class="brand__single">

@@ -41,7 +41,7 @@
 
             <!-- Product Info -->
             <div class="col-xl-6 col-lg-6">
-                <div class="single__product__wrap">
+                <div class="single__product__wraper">
                     <div class="single__product__heading">
                         <h2>{{ $product->name }}</h2>
                     </div>
@@ -70,7 +70,7 @@
                             @endphp
 
                             @if($averageRating)
-                            <li>Rating rata-rata: <strong>{{ number__format($averageRating, 1) }}/5</strong></li>
+                            <li>Rating rata-rata: <strong>{{ number_format($averageRating, 1) }}/5</strong></li>
                             @endif
                         </ul>
                     </div>
@@ -135,29 +135,29 @@
                     </div>
 
                     <!-- Display Reviews -->
-                    <div class="col-xl-6">
-                        <div class="border p-4 rounded shadow-sm">
-                            <h5 class="mb-3">Ulasan pelanggan</h5>
-                            @forelse ($product->reviews as $review)
-                            <div class="mb-3 border-bottom">
-                                <div class="d-flex justify-content-between mb-2">
-                                    <strong>{{ $review->user->name }}</strong>
-                                    <small class="text-muted">{{ $review->created__at->format('d M, H:i') }}</small>
-                                </div>
-                                <div class="mb-2">
-                                    @for ($i = 1; $i <= 5; $i++) <i class="fas {{ $i <= $review->point ? 'fa' : 'far' }} fa-star text-warning"></i>
-                                        @endfor
-                                </div>
-                                <p class="mb-0">{{ $review->comment }}</p>
-                            </div>
-                            @empty
-                            <p class="text-muted">Belum ada ulasan untuk produk ini.</p>
-                            @endforelse
+                     <div class="col-xl-6">
+                <div class="border p-4 rounded shadow-sm">
+                    <h5 class="mb-4">Ulasan Pelanggan</h5>
+                    @forelse ($product->reviews as $review)
+                    <div class="mb-4 pb-3 border-bottom">
+                        <div class="d-flex justify-content-between mb-2">
+                            <strong>{{ $review->user->name }}</strong>
+                            <small class="text-muted">{{ $review->created_at->format('d M Y, H:i') }}</small>
                         </div>
+                        <div class="mb-1">
+                            @for ($i = 1; $i <= 5; $i++) <i class="fa{{ $i <= $review->point ? 's' : 'r' }} fa-star text-warning"></i>
+                                @endfor
+                        </div>
+                        <p class="mb-0">{{ $review->comment }}</p>
                     </div>
+                    @empty
+                    <p class="text-muted">Belum ada ulasan untuk produk ini.</p>
+                    @endforelse
                 </div>
             </div>
         </div>
+    </div>
+    </div>
     </div>
 </div>
 @endsection

@@ -16,7 +16,7 @@ return new class extends Migration
             $table->unsignedBigInteger('user_id');
             $table->string('order_code')->unique();
             $table->integer('total_price');
-            $table->enum('status',['pending','cancel','succes']);
+            $table->enum('status',['pending','cancel','success']);
 
 
             $table->foreign('user_id')->references('id')->on('users');

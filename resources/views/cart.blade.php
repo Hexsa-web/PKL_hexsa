@@ -38,19 +38,19 @@
                         <tbody>
                             @forelse ($cartItems as $item)
                                 <tr>
-                                    <td class="cartarea__product____thumbnail">
+                                    <td class="cartarea__product__thumbnail">
                                         <a href="#">
                                             <img src="{{ Storage::exists($item->product->image) ? Storage::url($item->product->image) : asset('assets/frontend/img/grid/grid__1.png') }}"
                                                  alt="{{ $item->product->name }}" width="80">
                                         </a>
                                     </td>
-                                    <td class="cartarea__product____name">
+                                    <td class="cartarea__product__name">
                                         <a href="#">{{ $item->product->name }}</a>
                                     </td>
-                                    <td class="cartarea__product____price__cart">
+                                    <td class="cartarea__product__price__cart">
                                         <span class="amount">Rp {{ number_format($item->product->price, 0, ',', '.') }}</span>
                                     </td>
-                                    <td class="cartarea__product____quantity">
+                                    <td class="cartarea__product__quantity">
                                         <form action="{{ route('cart.update', $item->id) }}" method="POST">
                                             @csrf
                                             @method('PUT')
@@ -63,15 +63,15 @@
                                             </div>
                                         </form>
                                     </td>
-                                    <td class="cartarea__product____subtotal">
+                                    <td class="cartarea__product__subtotal">
                                         Rp {{ number_format($item->qty * $item->product->price, 0, ',', '.') }}
                                     </td>
-                                    <td class="cartarea__product____remove">
+                                    <td class="cartarea__product__remove">
                                         <form action="{{ route('cart.remove', $item->id) }}" method="POST"
                                               onsubmit="return confirm('Hapus item ini dari keranjang?')">
                                             @csrf
                                             @method('DELETE')
-                                            <button type="submit" class="btn btn-sm btn-danger">
+                                            <button type="submit" class="btn btn-sm btn-danger">Delete
                                                 <i class="fas fa-trash"></i>
                                             </button>
                                         </form>
@@ -98,8 +98,8 @@
         <!-- Continue Shopping -->
         <div class="row">
             <div class="col-lg-12">
-                <div class="cartarea____shipping____wraper">
-                    <div class="cartarea____shipping____update">
+                <div class="cartarea__shipping__wraper">
+                    <div class="cartarea__shipping__update">
                         <a class="default__button" href="{{ route('cart.checkout') }}">Proceed to Checkout</a>
                     </div>
                 </div>
